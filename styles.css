@@ -892,3 +892,19 @@ footer {
 @media (max-width: 600px) {
   .footer-inner { flex-direction: column; text-align: center; }
 }
+.request-phone-card {
+  cursor: default;
+  border-style: dashed !important;
+}
+
+.request-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.request-link:hover {
+  opacity: 0.75;
+}
