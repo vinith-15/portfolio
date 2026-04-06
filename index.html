@@ -207,50 +207,58 @@
   </section>
 
   <!-- ═══ PROJECTS ═══ -->
+ 
   <section id="projects">
-    <div class="container">
-      <div class="section-label">03 — Projects</div>
-      <h2 class="section-title reveal">Things I've Built</h2>
-      <p class="section-sub reveal">A selection of projects that showcase my skills.</p>
+  <div class="container">
+    <h2 class="section-title reveal">Projects</h2>
 
-      <div class="projects-grid">
+    <div class="projects-grid">
 
-        <div class="project-card featured reveal">
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <h3 class="project-title">Plant Disease Recognition System – CNN Model</h3>
+        <p class="project-desc">
+          Developed a plant disease detection system using CNN with TensorFlow for accurate image classification.
+        </p>
+        <ul class="project-points">
+          <li>Built a web application using Flask to provide real-time disease predictions</li>
+          <li>Applied image preprocessing and data augmentation techniques</li>
+          <li>Improved model performance and reliability</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <h3 class="project-title">Loan Approval Prediction System</h3>
+        <p class="project-desc">
+          Built a machine learning model to predict loan approval status based on applicant data.
+        </p>
+        <ul class="project-points">
+          <li>Implemented Logistic Regression for prediction</li>
+          <li>Performed data preprocessing and encoding</li>
+          <li>Improved model accuracy and decision insights</li>
+        </ul>
+        
+      </div>
+              <div class="project-card reveal" style="--delay:0.2s">
           <div class="project-card-inner">
             <div class="project-top">
-              <div class="project-icon">🤖</div>
+              <div class="project-icon">📦</div>
               <div class="project-links">
                 <a href="#" class="proj-link" title="GitHub">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 </a>
               </div>
             </div>
-            <div class="project-tag">Featured</div>
-            <h3 class="project-title">AI-Powered Resume Analyzer</h3>
-            <p class="project-desc">ATS compatibility scoring system (0–100). Uses TF-IDF and cosine similarity for resume-job matching, keyword extraction, skills gap analysis, and real-time optimization suggestions with interactive charts.</p>
+            <h3 class="project-title">data-pipeline-tool</h3>
+            <p class="project-desc">Published Python package for automated data cleaning and validation. Features duplicate removal, null handling, schema validation, and automated analysis report generation.</p>
             <div class="project-tech">
-              <span>Python</span><span>TF-IDF</span><span>NLP</span><span>Visualization</span>
+              <span>Python</span><span>Pandas</span><span>PyPI</span><span>NumPy</span>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal" style="--delay:0.1s">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon">🛒</div>
-              <div class="project-links">
-                <a href="#" class="proj-link" title="GitHub">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">ShopKart — E-Commerce</h3>
-            <p class="project-desc">Full-stack Django e-commerce platform with authentication, cart, wishlist, and product management. Secure, scalable backend using Django ORM and MySQL.</p>
-            <div class="project-tech">
-              <span>Django</span><span>MySQL</span><span>HTML/CSS</span><span>Python</span>
-            </div>
-          </div>
-        </div>
+
 
         <div class="project-card reveal" style="--delay:0.2s">
           <div class="project-card-inner">
