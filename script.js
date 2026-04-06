@@ -219,7 +219,7 @@ cards.forEach(card => {
 // ─── TYPING EFFECT FOR HERO TITLE ────────────
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-  const titles  = ['Data Analyst & Python Developer', 'EDA & Visualization Expert', 'Django & SQL Engineer'];
+  const titles  = ['Data Analyst & AI Engineer', 'EDA & Visualization Expert', 'ML Engineer'];
   let tIdx = 0, cIdx = 0, deleting = false;
   const typeDelay = 80, deleteDelay = 40, pauseDelay = 2000;
 
