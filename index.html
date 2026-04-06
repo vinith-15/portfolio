@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vinith Kabilar — Data Analyst</title>
+  <title>Vinith Kabilar — Data Analyst & AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
@@ -49,31 +49,31 @@
     <div class="hero-content">
       <div class="hero-badge reveal">
         <span class="badge-dot"></span>
-        Available for opportunities
+        Open to Data Analyst &amp; AI Engineer Roles
       </div>
       <h1 class="hero-name reveal">
         <span class="line">Vinith</span>
         <span class="line accent-line">Kabilar<span class="underscore"></span></span>
       </h1>
-      <p class="hero-title reveal">Data Analyst &amp; AI Developer</p>
+      <p class="hero-title reveal">Data Analyst &amp; AI Engineer</p>
       <p class="hero-tagline reveal">
-        I turn raw data into insight — building pipelines,<br>
-        visualizations, and tools that make decisions easier.
+        I build ML pipelines, predictive models, and AI-powered tools —<br>
+        turning raw data into decisions that actually matter.
       </p>
       <div class="hero-cta reveal">
         <a href="#contact" class="btn-primary">Get in Touch</a>
-       <a href="mailto:vinithkabilar@gmail.com?subject=Resume Request&body=Hi Vinith, I'd like to request your resume for a job opportunity." class="btn-outline">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-    <path d="M7 11V7a5 5 0 0110 0v4"/>
-  </svg>
-  Request Resume
-</a>
+        <a href="mailto:vinithkabilar@gmail.com?subject=Resume Request&body=Hi Vinith, I'd like to request your resume for a job opportunity." class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
+          Request Resume
+        </a>
       </div>
       <div class="hero-stats reveal">
-        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects Built</span></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">AI / ML Projects</span></div>
         <div class="stat-div"></div>
-        <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Technologies</span></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
         <div class="stat-div"></div>
         <div class="stat"><span class="stat-num">M.Sc.</span><span class="stat-label">Computer Science</span></div>
       </div>
@@ -83,27 +83,29 @@
       <div class="code-card reveal-right">
         <div class="code-header">
           <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="code-title">pipeline.py</span>
+          <span class="code-title">ml_pipeline.py</span>
         </div>
         <pre class="code-body"><span class="kw">import</span> pandas <span class="kw">as</span> pd
-<span class="kw">import</span> numpy <span class="kw">as</span> np
+<span class="kw">from</span> sklearn.pipeline <span class="kw">import</span> Pipeline
+<span class="kw">from</span> sklearn.linear_model <span class="kw">import</span> LogisticRegression
 
-<span class="kw">def</span> <span class="fn">clean_data</span>(df):
-    df = df.<span class="fn">drop_duplicates</span>()
-    df = df.<span class="fn">dropna</span>(thresh<span class="op">=</span><span class="num">0.8</span>)
-    df.<span class="fn">fillna</span>(df.<span class="fn">median</span>(), inplace<span class="op">=</span><span class="kw">True</span>)
-    <span class="kw">return</span> df
+<span class="kw">def</span> <span class="fn">build_pipeline</span>(X, y):
+    pipe <span class="op">=</span> Pipeline([
+      (<span class="str">'scaler'</span>, StandardScaler()),
+      (<span class="str">'model'</span>, LogisticRegression())
+    ])
+    pipe.<span class="fn">fit</span>(X, y)
+    <span class="kw">return</span> pipe
 
-<span class="comm"># ATS Score Calculation</span>
-<span class="kw">def</span> <span class="fn">ats_score</span>(resume, job):
-    tfidf <span class="op">=</span> TfidfVectorizer()
-    matrix <span class="op">=</span> tfidf.<span class="fn">fit_transform</span>(
-        [resume, job])
-    <span class="kw">return</span> <span class="fn">cosine_similarity</span>(matrix)</pre>
+<span class="comm"># CNN Plant Disease Detector</span>
+model <span class="op">=</span> tf.keras.<span class="fn">Sequential</span>([
+    layers.<span class="fn">Conv2D</span>(<span class="num">32</span>, (<span class="num">3</span>,<span class="num">3</span>), activation<span class="op">=</span><span class="str">'relu'</span>),
+    layers.<span class="fn">Dense</span>(<span class="num">128</span>, activation<span class="op">=</span><span class="str">'softmax'</span>)
+])</pre>
       </div>
-      <div class="floating-chip chip1 reveal-right">Python 🐍</div>
-      <div class="floating-chip chip2 reveal-right">Power BI 📊</div>
-      <div class="floating-chip chip3 reveal-right">SQL 🗄️</div>
+      <div class="floating-chip chip1 reveal-right">TensorFlow 🧠</div>
+      <div class="floating-chip chip2 reveal-right">Scikit-learn ⚙️</div>
+      <div class="floating-chip chip3 reveal-right">Python 🐍</div>
     </div>
   </section>
 
@@ -113,40 +115,40 @@
       <div class="section-label">01 — About</div>
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title reveal">Turning Data Into<br><em>Meaningful Decisions</em></h2>
+          <h2 class="section-title reveal">Data. Models.<br><em>Real Impact.</em></h2>
           <p class="about-para reveal">
-            I'm a fresher Data Analyst and Python developer based in Chennai, Tamil Nadu. With an M.Sc. in Computer Science and hands-on experience at Bigziel Technologies, I specialize in building clean data pipelines, exploratory analysis, and actionable visualizations.
+            I'm a Data Analyst &amp; AI Engineer based in Chennai, Tamil Nadu. With an M.Sc. in Computer Science and hands-on experience at Bigziel Technologies, I specialize in building end-to-end ML pipelines, predictive models, and AI-powered applications.
           </p>
           <p class="about-para reveal">
-            My work spans from writing optimized Python scripts that handle large-scale data cleaning, to building full-stack Django applications and publishing reusable Python packages. I thrive at the intersection of engineering and analytics.
+            From preprocessing pipelines using Pandas &amp; Scikit-learn, to deep learning models with TensorFlow and CNN architectures — I work across the full data-to-deployment stack. I thrive at the intersection of AI engineering and data analytics.
           </p>
           <div class="about-tags reveal">
             <span class="tag">📍 Chennai, TN</span>
             <span class="tag">🎓 M.Sc. CS — 75%</span>
             <span class="tag">💼 Open to Work</span>
-            <span class="tag">🐍 Python Enthusiast</span>
+            <span class="tag">🧠 AI / ML Enthusiast</span>
           </div>
         </div>
         <div class="about-cards">
           <div class="info-card reveal-right">
-            <div class="info-icon">📊</div>
-            <h3>Data Analysis</h3>
-            <p>EDA, cleaning, preprocessing and reporting for pipeline efficiency.</p>
+            <div class="info-icon">🤖</div>
+            <h3>Machine Learning</h3>
+            <p>Built predictive models using Scikit-learn, Logistic Regression, and feature engineering pipelines.</p>
           </div>
           <div class="info-card reveal-right" style="--delay:0.15s">
-            <div class="info-icon">🤖</div>
-            <h3>AI Projects</h3>
-            <p>Built ATS scoring system using TF-IDF and cosine similarity.</p>
+            <div class="info-icon">🧠</div>
+            <h3>Deep Learning</h3>
+            <p>Developed CNN models with TensorFlow for image classification and plant disease detection.</p>
           </div>
           <div class="info-card reveal-right" style="--delay:0.3s">
-            <div class="info-icon">🌐</div>
-            <h3>Web Dev</h3>
-            <p>Full-stack Django e-commerce apps with auth &amp; MySQL backend.</p>
+            <div class="info-icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>EDA, data cleaning, preprocessing, and Power BI visualizations for actionable insights.</p>
           </div>
           <div class="info-card reveal-right" style="--delay:0.45s">
-            <div class="info-icon">📦</div>
-            <h3>OSS Package</h3>
-            <p>Published Python package for automated data validation &amp; cleaning.</p>
+            <div class="info-icon">⚙️</div>
+            <h3>Data Pipelines</h3>
+            <p>Published Python package for automated data cleaning, null handling &amp; validation.</p>
           </div>
         </div>
       </div>
@@ -158,32 +160,32 @@
     <div class="container">
       <div class="section-label">02 — Skills</div>
       <h2 class="section-title reveal">Technical Arsenal</h2>
-      <p class="section-sub reveal">Tools and technologies I work with daily.</p>
+      <p class="section-sub reveal">Tools and technologies I use to build AI &amp; data solutions.</p>
 
       <div class="skills-wrapper">
         <div class="skills-bars">
           <div class="skill-item reveal">
-            <div class="skill-meta"><span>Python</span><span class="skill-pct">88%</span></div>
+            <div class="skill-meta"><span>Python</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-meta"><span>Pandas / NumPy</span><span class="skill-pct">88%</span></div>
             <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-meta"><span>Scikit-learn</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-meta"><span>TensorFlow / CNN</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
           </div>
           <div class="skill-item reveal">
             <div class="skill-meta"><span>SQL</span><span class="skill-pct">80%</span></div>
             <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
           </div>
           <div class="skill-item reveal">
-            <div class="skill-meta"><span>Pandas / NumPy</span><span class="skill-pct">85%</span></div>
-            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-          </div>
-          <div class="skill-item reveal">
-            <div class="skill-meta"><span>Power BI</span><span class="skill-pct">75%</span></div>
-            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-          </div>
-          <div class="skill-item reveal">
-            <div class="skill-meta"><span>Django</span><span class="skill-pct">72%</span></div>
-            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
-          </div>
-          <div class="skill-item reveal">
-            <div class="skill-meta"><span>Excel</span><span class="skill-pct">78%</span></div>
+            <div class="skill-meta"><span>Power BI / Excel</span><span class="skill-pct">78%</span></div>
             <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
           </div>
         </div>
@@ -193,87 +195,101 @@
           <div class="skill-pill reveal-right" style="--delay:0.05s"><span class="pill-icon">🗄️</span>SQL</div>
           <div class="skill-pill reveal-right" style="--delay:0.1s"><span class="pill-icon">🐼</span>Pandas</div>
           <div class="skill-pill reveal-right" style="--delay:0.15s"><span class="pill-icon">🔢</span>NumPy</div>
-          <div class="skill-pill reveal-right" style="--delay:0.2s"><span class="pill-icon">🌐</span>Django</div>
-          <div class="skill-pill reveal-right" style="--delay:0.25s"><span class="pill-icon">📊</span>Power BI</div>
-          <div class="skill-pill reveal-right" style="--delay:0.3s"><span class="pill-icon">📗</span>Excel</div>
-          <div class="skill-pill reveal-right" style="--delay:0.35s"><span class="pill-icon">📓</span>Jupyter</div>
-          <div class="skill-pill reveal-right" style="--delay:0.4s"><span class="pill-icon">🔀</span>Git/GitHub</div>
-          <div class="skill-pill reveal-right" style="--delay:0.45s"><span class="pill-icon">🔍</span>EDA</div>
-          <div class="skill-pill reveal-right" style="--delay:0.5s"><span class="pill-icon">🧹</span>Data Cleaning</div>
-          <div class="skill-pill reveal-right" style="--delay:0.55s"><span class="pill-icon">📈</span>Visualization</div>
+          <div class="skill-pill reveal-right" style="--delay:0.2s"><span class="pill-icon">⚙️</span>Scikit-learn</div>
+          <div class="skill-pill reveal-right" style="--delay:0.25s"><span class="pill-icon">🧠</span>TensorFlow</div>
+          <div class="skill-pill reveal-right" style="--delay:0.3s"><span class="pill-icon">🖼️</span>CNN</div>
+          <div class="skill-pill reveal-right" style="--delay:0.35s"><span class="pill-icon">🌶️</span>Flask</div>
+          <div class="skill-pill reveal-right" style="--delay:0.4s"><span class="pill-icon">📊</span>Power BI</div>
+          <div class="skill-pill reveal-right" style="--delay:0.45s"><span class="pill-icon">📗</span>Excel</div>
+          <div class="skill-pill reveal-right" style="--delay:0.5s"><span class="pill-icon">🔍</span>EDA</div>
+          <div class="skill-pill reveal-right" style="--delay:0.55s"><span class="pill-icon">📓</span>Jupyter</div>
+          <div class="skill-pill reveal-right" style="--delay:0.6s"><span class="pill-icon">🔀</span>Git / GitHub</div>
+          <div class="skill-pill reveal-right" style="--delay:0.65s"><span class="pill-icon">🧹</span>Data Cleaning</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ PROJECTS ═══ -->
- 
   <section id="projects">
-  <div class="container">
-    <h2 class="section-title reveal">Projects</h2>
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title reveal">Things I've Built</h2>
+      <p class="section-sub reveal">AI &amp; data projects that solve real-world problems.</p>
 
-    <div class="projects-grid">
+      <div class="projects-grid">
 
-      <!-- Project 1 -->
-      <div class="project-card reveal">
-        <h3 class="project-title">Plant Disease Recognition System – CNN Model</h3>
-        <p class="project-desc">
-          Developed a plant disease detection system using CNN with TensorFlow for accurate image classification.
-        </p>
-        <ul class="project-points">
-          <li>Built a web application using Flask to provide real-time disease predictions</li>
-          <li>Applied image preprocessing and data augmentation techniques</li>
-          <li>Improved model performance and reliability</li>
-        </ul>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card reveal">
-        <h3 class="project-title">Loan Approval Prediction System</h3>
-        <p class="project-desc">
-          Built a machine learning model to predict loan approval status based on applicant data.
-        </p>
-        <ul class="project-points">
-          <li>Implemented Logistic Regression for prediction</li>
-          <li>Performed data preprocessing and encoding</li>
-          <li>Improved model accuracy and decision insights</li>
-        </ul>
-        
-      </div>
-              <div class="project-card reveal" style="--delay:0.2s">
+        <!-- Project 1: Plant Disease (Featured) -->
+        <div class="project-card featured reveal">
           <div class="project-card-inner">
             <div class="project-top">
-              <div class="project-icon">📦</div>
+              <div class="project-icon">🌿</div>
               <div class="project-links">
-                <a href="#" class="proj-link" title="GitHub">
+                <a href="https://github.com/vinith-15" target="_blank" class="proj-link" title="GitHub">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 </a>
               </div>
             </div>
-            <h3 class="project-title">data-pipeline-tool</h3>
-            <p class="project-desc">Published Python package for automated data cleaning and validation. Features duplicate removal, null handling, schema validation, and automated analysis report generation.</p>
+            <div class="project-tag">Deep Learning · Featured</div>
+            <h3 class="project-title">Plant Disease Recognition System — CNN Model</h3>
+            <p class="project-desc">AI-powered plant disease detection using a Convolutional Neural Network built with TensorFlow. Deployed via a Flask web app for real-time image classification with data augmentation to boost model accuracy.</p>
+            <ul class="project-points">
+              <li>Built CNN architecture with TensorFlow for accurate multi-class image classification</li>
+              <li>Developed Flask web app for real-time plant disease predictions from uploaded images</li>
+              <li>Applied image preprocessing &amp; data augmentation to improve model reliability</li>
+            </ul>
             <div class="project-tech">
-              <span>Python</span><span>Pandas</span><span>PyPI</span><span>NumPy</span>
+              <span>Python</span><span>TensorFlow</span><span>CNN</span><span>Flask</span><span>Image Processing</span>
             </div>
           </div>
         </div>
 
+        <!-- Project 2: Loan Approval -->
+        <div class="project-card reveal" style="--delay:0.1s">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">🏦</div>
+              <div class="project-links">
+                <a href="https://github.com/vinith-15" target="_blank" class="proj-link" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-tag">Machine Learning</div>
+            <h3 class="project-title">Loan Approval Prediction System</h3>
+            <p class="project-desc">Predictive ML model using Logistic Regression to classify loan approval status. Full pipeline from raw data preprocessing to trained, evaluated model using Scikit-learn.</p>
+            <ul class="project-points">
+              <li>Built end-to-end ML pipeline with data preprocessing &amp; encoding</li>
+              <li>Implemented Logistic Regression for binary classification using Scikit-learn</li>
+              <li>Evaluated model accuracy and optimized decision thresholds</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Logistic Regression</span>
+            </div>
+          </div>
+        </div>
 
-
+        <!-- Project 3: data-pipeline-tool -->
         <div class="project-card reveal" style="--delay:0.2s">
           <div class="project-card-inner">
             <div class="project-top">
               <div class="project-icon">📦</div>
               <div class="project-links">
-                <a href="#" class="proj-link" title="GitHub">
+                <a href="https://github.com/vinith-15" target="_blank" class="proj-link" title="GitHub">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 </a>
               </div>
             </div>
+            <div class="project-tag">Open Source · PyPI</div>
             <h3 class="project-title">data-pipeline-tool</h3>
-            <p class="project-desc">Published Python package for automated data cleaning and validation. Features duplicate removal, null handling, schema validation, and automated analysis report generation.</p>
+            <p class="project-desc">Published Python package for automated data cleaning and validation — built for ML workflows. Handles deduplication, null imputation, schema validation, and auto-generates analysis reports.</p>
+            <ul class="project-points">
+              <li>Reusable package for ML data preprocessing — duplicate removal &amp; null handling</li>
+              <li>Schema validation with automated quality report generation</li>
+              <li>Designed for seamless integration into data science workflows</li>
+            </ul>
             <div class="project-tech">
-              <span>Python</span><span>Pandas</span><span>PyPI</span><span>NumPy</span>
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>PyPI</span>
             </div>
           </div>
         </div>
@@ -297,13 +313,13 @@
           <div class="timeline-item reveal">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">Aug 2025 — Present</span>
+              <span class="timeline-date">Aug 2025 — Mar 2026</span>
               <h4>Data Analyst Intern</h4>
               <span class="timeline-company">Bigziel Technologies, Chennai</span>
               <ul>
-                <li>Developed Python scripts for large-scale data cleaning &amp; preprocessing</li>
-                <li>Implemented data quality features: deduplication, null handling, schema validation</li>
-                <li>Generated automated analysis reports for pipeline efficiency</li>
+                <li>Built and optimized <strong>data preprocessing pipelines</strong> for ML workflows using Python (cleaning, encoding, feature engineering)</li>
+                <li>Applied <strong>ML models using Scikit-learn</strong> for predictive analysis and pattern recognition</li>
+                <li>Ensured data quality via null handling, deduplication &amp; schema validation to improve model accuracy</li>
               </ul>
             </div>
           </div>
@@ -335,7 +351,7 @@
           <div class="timeline-item reveal" style="--delay:0.2s">
             <div class="timeline-dot accent-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">Certifications</span>
+              <span class="timeline-date">Certification</span>
               <h4>C &amp; C++ Programming</h4>
               <span class="timeline-company">Bharathidasan University</span>
             </div>
@@ -343,7 +359,7 @@
           <div class="timeline-item reveal" style="--delay:0.3s">
             <div class="timeline-dot accent-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">Certifications</span>
+              <span class="timeline-date">Certification</span>
               <h4>Data Analytics</h4>
               <span class="timeline-company">Courseinn Academy</span>
             </div>
@@ -353,9 +369,12 @@
 
       <div class="resume-download reveal">
         <p>Want the full picture?</p>
-        <a href="resume_vinith.pdf" download class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-          Download Full Resume
+        <a href="mailto:vinithkabilar@gmail.com?subject=Resume Request&body=Hi Vinith, I'd like to request your resume for a job opportunity." class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
+          Request Full Resume
         </a>
       </div>
     </div>
@@ -369,9 +388,10 @@
         <div class="contact-info">
           <h2 class="section-title reveal">Let's Work<br><em>Together</em></h2>
           <p class="contact-para reveal">
-            I'm actively looking for data analyst or Python developer roles. Whether you have a project, an opportunity, or just want to connect — my inbox is open.
+            I'm actively looking for Data Analyst and AI Engineer roles. Whether you have a project, an opportunity, or just want to connect — my inbox is always open.
           </p>
           <div class="contact-links reveal">
+
             <a href="mailto:vinithkabilar@gmail.com" class="contact-link">
               <div class="contact-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -381,42 +401,49 @@
                 <span class="cl-value">vinithkabilar@gmail.com</span>
               </div>
             </a>
+
             <div class="contact-link request-phone-card">
-  <div class="contact-icon">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
-    </svg>
-  </div>
-  <div>
-    <span class="cl-label">Phone</span>
-    <span class="cl-value">
-      🔒 Hidden — 
-      <a href="mailto:vinithkabilar@gmail.com?subject=Phone Number Request&body=Hi Vinith, I'd like to request your phone number for a job opportunity." 
-         class="request-link">
-        Click to Request
-      </a>
-    </span>
-  </div>
-</div>
-        
-            <a href="https://www.linkedin.com" target="_blank" class="contact-link">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div>
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">🔒 Hidden —
+                  <a href="mailto:vinithkabilar@gmail.com?subject=Phone Number Request&body=Hi Vinith, I'd like to request your phone number for a job opportunity." class="request-link">Click to Request</a>
+                </span>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/in/vinith-k-a829722a4" target="_blank" class="contact-link">
               <div class="contact-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
               </div>
               <div>
                 <span class="cl-label">LinkedIn</span>
-                <span class="cl-value">https://www.linkedin.com/in/vinith-kabilar-a829722a4 </span>
+                <span class="cl-value">linkedin.com/in/vinith-k-a829722a4</span>
               </div>
             </a>
-            <a href="https://github.com" target="_blank" class="contact-link">
+
+            <a href="https://github.com/vinith-15" target="_blank" class="contact-link">
               <div class="contact-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               </div>
               <div>
                 <span class="cl-label">GitHub</span>
-                <span class="cl-value">https://github.com/vinith-15/</span>
+                <span class="cl-value">github.com/vinith-15</span>
               </div>
             </a>
+
+            <a href="https://vinith-15.github.io/portfolio/" target="_blank" class="contact-link">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              </div>
+              <div>
+                <span class="cl-label">Portfolio</span>
+                <span class="cl-value">vinith-15.github.io/portfolio</span>
+              </div>
+            </a>
+
           </div>
         </div>
 
@@ -431,7 +458,7 @@
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" />
+            <input type="text" id="subject" placeholder="Data Analyst Role / AI Project" />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
@@ -456,12 +483,12 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">VK<span class="dot">.</span></div>
-        <p class="footer-copy">Designed &amp; built by <strong>Vinith Kabilar</strong> · 2025</p>
+        <p class="footer-copy">Designed &amp; built by <strong>Vinith Kabilar</strong> · 2026</p>
         <div class="footer-socials">
-          <a href="https://github.com" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/vinith-15" target="_blank" aria-label="GitHub">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           </a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/vinith-k-a829722a4" target="_blank" aria-label="LinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
           <a href="mailto:vinithkabilar@gmail.com" aria-label="Email">
